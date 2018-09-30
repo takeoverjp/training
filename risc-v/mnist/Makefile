@@ -68,13 +68,12 @@ train_data: train-images-idx3-ubyte train-labels-idx1-ubyte
 t10k_data: t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
 
 sbrk.o: sbrk.c
-	riscv64-unknown-elf-gcc -mabi=lp64 -c -shared -fpic $^
+	riscv64-unknown-elf-gcc -c -shared -fpic $^
 malloc.o: malloc.c
-	riscv64-unknown-elf-gcc -mabi=lp64 -c -shared -fpic $^
+	riscv64-unknown-elf-gcc -c -shared -fpic $^
 
 
 TRAIN_FLAGS :=
-TRAIN_FLAGS += -mabi=lp64
 TRAIN_FLAGS += -DPREALLOCATE=1
 TRAIN_FLAGS += -mcmodel=medany
 TRAIN_FLAGS += -std=gnu99
