@@ -3,7 +3,7 @@
 	url = https://github.com/oreilly-japan/deep-learning-from-scratch.git
 [submodule "risc-v/mnist/libfixmath"]
 	path = risc-v/mnist/libfixmath
-	url = https://github.com/msyksphinz/libfixmath.git
+	url = https://github.com/takeoverjp/libfixmath.git
 [submodule "program/DNN"]
 	path = program/DNN
 	url = https://github.com/takezo5096/DNN.git
